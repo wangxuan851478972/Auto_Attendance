@@ -58,7 +58,7 @@ class DaKa(object):
         geo_text = jsontext['geo_api_info']
         geo_text = geo_text.replace("false", "False").replace("true", "True")
         geo_obj = eval(geo_text)['addressComponent']
-        area = geo_obj['province'] + " " + geo_obj['city'] + " " + geo_obj['district']
+        area = '湖南省 长沙市 开福区''湖南省 长沙市 开福区'
         name = re.findall(r'realname: "([^\"]+)",', html)[0]
         number = re.findall(r"number: '([^\']+)',", html)[0]
 
