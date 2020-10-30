@@ -29,7 +29,7 @@ class DaKa(object):
         self.info = None
         self.sess = requests.Session()
 
-    def login(self):
+    def login(self): 
         """Login to CSU platform"""
         res1 = self.sess.get(self.login_url)
         self.cookie1 = res1.headers['Set-Cookie'].split(";")[0]
