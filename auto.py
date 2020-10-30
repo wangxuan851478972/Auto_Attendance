@@ -112,5 +112,5 @@ if __name__ == "__main__":
     parser.add_argument('--eai-sess', type=str, default=None)
     parser.add_argument('--UUkey', type=str, default=None)
     args = parser.parse_args()
-    print("用户信息：", args)
+    print("用户信息：", args) 
     main(args.username, args.password, args.eai_sess, args.UUkey)
